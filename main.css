@@ -1,0 +1,227 @@
+:root {
+    --green: #00FF00;
+    --white: #FFFFFF;
+    --black: #000000;
+    --blue: #0729f5;
+    --yellow: #fafa10;
+    --red: #ff0202;
+    --ice: #4cf5ff;
+    --orange: #ff7602;
+    --gray: #716060;
+    --silver: #c0c0c0
+
+    /* Default values for body styles */
+    --bg: var(--white);
+    --fontColor: var(--black);
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textEdit {
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.pageInfo {
+    font-weight: bold; /* Corrected the property name from "bolder" to "font-weight" */
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --themeButtonBg: var(--black);
+    --themeButtonFontColor: var(--blue);
+}
+
+.dark-theme {
+    --bg: var(--gray);
+    --fontColor: var(--white);
+    --themeButtonBg: var(--yellow);
+    --themeButtonFontColor: var(--orange);
+}
+
+.themeButton {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .themeButton:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .themeButton:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  
+
+  .lightsaber {
+    width: 20px;
+    height: 300px;
+    position: absolute; /* Position the lightsaber */
+    left: 50%; /* Center horizontally */
+    bottom: 150px;
+    transform: translateX(-50%); /* Center both vertically and horizontally */
+}
+
+.saberTop {
+    background-image: linear-gradient(
+        to right,
+        gray 0%, gray 12.5%, 
+        black 12.5%, black 25%,
+        silver 37.5%, silver 37.5%,
+        gray 37.5%, gray 62.5%, 
+        black 62.5%, gray 75%,
+        silver 75%, silver 87.5%,
+        gray 87.5%, gray 100%
+    );
+    background-color: var(--ice);
+    width: 20px;
+    height: 30px;
+    border-radius: 10% 10% 10% 10%;
+    z-index: 2;
+}
+
+.midTop {
+    background-color: var(--black);
+    height: 15px;
+    width: 10px;
+    border-radius: 0;
+    margin: 0 auto;
+}
+
+.midMiddle {
+    background-image: linear-gradient(
+        to right,
+        gray 0%, gray 12.5%, 
+        black 12.5%, black 25%,
+        silver 37.5%, silver 37.5%,
+        gray 37.5%, gray 62.5%, 
+        black 62.5%, gray 75%,
+        silver 75%, silver 87.5%,
+        gray 87.5%, gray 100%
+    );
+    background-color: var(--ice);
+    height: 150px;
+    width: 20px;
+    border-radius: 10% 10% 10% 10%;
+    margin: 0 auto;
+}
+
+
+.saberToggle {
+    content: '';
+    position:absolute;
+    top: 20%;
+    right:0;
+    left: 2px;;
+    height: 15px;
+    width: 10px;
+    background-image:
+      radial-gradient( ellipse, 
+        red 0%, black 60%, 
+        transparent 60%, transparent
+      );
+}
+
+.midBottom {
+    background-color: var(--black);
+    height: 15px;
+    width: 8px;
+    border-radius: 0% 0% 0% 0%;
+    margin: 0 auto;
+}
+
+.saberBottom {
+    background-image: linear-gradient(
+        to right,
+        gray 0%, gray 12.5%, 
+        black 12.5%, black 25%,
+        silver 37.5%, silver 37.5%,
+        gray 37.5%, gray 62.5%, 
+        black 62.5%, gray 75%,
+        silver 75%, silver 87.5%,
+        gray 87.5%, gray 100%
+    );
+    background-color: var(--ice);
+    height: 20px;
+    width: 20px;
+    border-radius: 0% 0% 35% 35%;
+    margin: 0 auto;
+}
+
+.saberBlade {
+    position: absolute;
+    width: 13px;
+    height: 400px;
+    top: -400px; /* Position the blade at the top of .saberTop */
+    left: 50%; /* Center the blade horizontally within .saberTop */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: var(--green);
+    border-radius: 30% 30% 0 0;
+    border-bottom: 0px;
+    border-top: 6px;
+    box-shadow: 0px 0px 10px, 0px 0px 2px inset;
+    animation: glow 1.5s linear infinite;
+    visibility: hidden;
+    z-index: 1;
+}
