@@ -10,40 +10,116 @@
     --gray: #716060;
     --silver: #c0c0c0
 
-    /* Default values for body styles */
     --bg: var(--white);
     --fontColor: var(--black);
+}
+
+header {
+  position: relative;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  margin: auto;
+  width: 100vw;
+  height: 80pt;
+  top: 0;
+  bottom: 0;
+
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80pt;
+
+  text-align: center;
+
+  user-select: none;
+
+  color: var(--orange)
+}
+
+.site {
+  padding: 2em 0;
+  text-align: center;
+  font-size: .8em;
+  position:relative
+}
+.site a {
+  color: var(--orange);
+  font-weight: 600;
+  text-decoration: none;
+}
+.site a:hover {
+  color: var(--blue);
+}
+
+.site nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background: var(--blue);
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#333;
+  color: var(--green)
 }
 
 body {
     background: var(--bg);
     color: var(--fontColor);
-    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
 }
 .textEdit {
-    text-align: center;
     position: relative;
     z-index: 5;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    font-weight: 400;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.pageInfo {
-    font-weight: bold; /* Corrected the property name from "bolder" to "font-weight" */
-    font-size: large;
-    font-family: 'Times New Roman', Times, serif;
+.openPageText {
+  position: relative;
+  z-index: 5;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-weight: 300;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
 }
 
 .light-theme {
     --bg: var(--white);
     --fontColor: var(--black);
-    --themeButtonBg: var(--black);
-    --themeButtonFontColor: var(--blue);
 }
 
 .dark-theme {
-    --bg: var(--gray);
+    --bg: var(--black);
     --fontColor: var(--white);
-    --themeButtonBg: var(--yellow);
-    --themeButtonFontColor: var(--orange);
 }
 
 .themeButton {
@@ -53,7 +129,10 @@ body {
     color: rgb(255, 255, 255);
     background: #111;
     cursor: pointer;
-    position: relative;
+    position: absolute;
+    margin: auto;
+    top: 10%;
+    left: 80%;
     z-index: 0;
     border-radius: 10px;
     user-select: none;
@@ -112,15 +191,14 @@ body {
     top: 0;
     border-radius: 10px;
   }
-  
 
   .lightsaber {
     width: 20px;
     height: 300px;
-    position: absolute; /* Position the lightsaber */
-    left: 50%; /* Center horizontally */
-    bottom: 150px;
-    transform: translateX(-50%); /* Center both vertically and horizontally */
+    position: relative;
+    left: 2%; 
+    top: 17%;
+    transform: translateX(-50%);
 }
 
 .saberTop {
@@ -210,7 +288,7 @@ body {
 }
 
 .saberBlade {
-    position: absolute;
+    position: absolute; 
     width: 13px;
     height: 400px;
     top: -400px; /* Position the blade at the top of .saberTop */
@@ -225,3 +303,4 @@ body {
     visibility: hidden;
     z-index: 1;
 }
+

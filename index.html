@@ -7,16 +7,39 @@
     <title>SpinalCodez</title>
     <link rel="stylesheet" href="main.css">
 </head>
+<header>
+    <div class="pageHead">
+            <span id="text1"></span>
+            <span id="text2"></span>
+    </div>
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+</header>
+<section class="site">
+    <nav>
+        <a href="gamingsecrets.html">Secrets</a>
+        <a href="">Page</a>
+        <a href="">Page</a>
+        <a href="">Page</a>
+        <a href="">Page</a>
+    </nav>
+</section>
 <body class="dark-theme">
     <div class="textEdit">
-    <h1> SpinalCodez</h1>
-        <p class="color" id="pageInfo">This is the start to something amazing.<br>
+        <p>This is the start to something amazing.<br></p>
+    </div>
+    <div class="openPageText">
+        <p> <span class="tab">Here is the development visualization of SpinalCodez. To watch me grow from a young padawon to a full fledged jedi programmer.<br>
             <br>
-            Here is the development visualization of SpinalCodez. To watch me grow from a young padawon to a full fledged jedi programmer.<br>
-            <br>
-            Enjoy!
-        </p>
-        <p>Go to <a href="gamingsecrets.html">Gaming Secrets</a></p>
+        Enjoy!</span></p>
     </div>
     <div class="lightsaber">
         <div class="saberTop"></div>
@@ -34,4 +57,5 @@
     <noscript>You need to enable Javascript to view the full site.</noscript>
     <script src="function.js"></script>
 </body>
+
 </html>
