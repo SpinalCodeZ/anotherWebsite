@@ -41,6 +41,7 @@ header {
 
   text-align: center;
 
+  -webkit-user-select: none;
   user-select: none;
 
   color: var(--orange)
@@ -112,14 +113,14 @@ body {
   margin-left: 40px;
 }
 
-.light-theme {
-    --bg: var(--white);
-    --fontColor: var(--black);
-}
-
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--white);
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
 }
 
 .themeButton {
@@ -134,11 +135,11 @@ body {
     top: 10%;
     left: 80%;
     z-index: 0;
-    border-radius: 10px;
-    user-select: none;
+    border-radius: 10px;  
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
-  }
+}
   
   .themeButton:before {
     content: "";
@@ -159,14 +160,14 @@ body {
     left: -2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
     -webkit-filter: blur(5px);
+    filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     animation: glowing-button-85 20s linear infinite;
     transition: opacity 0.3s ease-in-out;
     border-radius: 10px;
-  }
+}
   
   @keyframes glowing-button-85 {
     0% {
@@ -178,7 +179,7 @@ body {
     100% {
       background-position: 0 0;
     }
-  }
+}
   
   .themeButton:after {
     z-index: -1;
@@ -190,7 +191,7 @@ body {
     left: 0;
     top: 0;
     border-radius: 10px;
-  }
+}
 
   .lightsaber {
     width: 20px;
@@ -244,7 +245,6 @@ body {
     border-radius: 10% 10% 10% 10%;
     margin: 0 auto;
 }
-
 
 .saberToggle {
     content: '';
@@ -303,4 +303,3 @@ body {
     visibility: hidden;
     z-index: 1;
 }
-
