@@ -14,7 +14,7 @@
     --fontColor: var(--black);
 }
 
-.gsPageHead {
+.theoPG {
     position: relative;
     font-weight: 600;
     font-size: larger;
@@ -24,7 +24,7 @@
     padding-bottom: 2%;
 }
 
-.gamingSecretsNav {
+.theoPageNav {
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -32,17 +32,17 @@
     position:relative;
 }
 
-.gamingSecretsNav a {
+.theoPageNav a {
     color: var(--orange);
     font-weight: 600;
     text-decoration: none;
 }
 
-.gamingSecretsNav a:hover {
+.theoPageNav a:hover {
     color: var(--blue);
 }
   
-.gamingSecretsNav nav{
+.theoPageNav nav{
     position:absolute;
     top:0;
     left:0;
@@ -50,23 +50,42 @@
     width:100%;
 }
 
-.gamingSecretsNav nav a{
+.theoPageNav nav a{
     padding:10px 30px;
     font-size:1.3em;
     display:inline-block;
 }
 
-.gamingSecretsNav nav a:hover{
+.theoPageNav nav a:hover{
     background:#333;
     color: var(--green);
 }
 
-.gamingSecretText {
+.theoTextBox {
+    position: relative;
+    left: 5%;
+    right: 10%;
+    top: 5%;
+    width: 35%;
+    border-style: solid;
+    border-color: var(--green);
+    background-image: url(../IMGS/8bit\ jungle.jpg);
+    background-size: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-width: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+
+.theoPageText {
     position: relative;
     padding-left: 2%;
     padding-right: 2%;
-    font-weight: 300;
+    font-weight: 600;
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+    color: var(--blue);
+    text-align: center;
 }

@@ -14,7 +14,7 @@
     --fontColor: var(--black);
 }
 
-.gsPageHead {
+.codingprjPG {
     position: relative;
     font-weight: 600;
     font-size: larger;
@@ -24,7 +24,7 @@
     padding-bottom: 2%;
 }
 
-.gamingSecretsNav {
+.codingprjPageNav {
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
@@ -32,17 +32,17 @@
     position:relative;
 }
 
-.gamingSecretsNav a {
+.codingprjPageNav a {
     color: var(--orange);
     font-weight: 600;
     text-decoration: none;
 }
 
-.gamingSecretsNav a:hover {
+.codingprjPageNav a:hover {
     color: var(--blue);
 }
   
-.gamingSecretsNav nav{
+.codingprjPageNav nav{
     position:absolute;
     top:0;
     left:0;
@@ -50,23 +50,13 @@
     width:100%;
 }
 
-.gamingSecretsNav nav a{
+.codingprjPageNav nav a{
     padding:10px 30px;
     font-size:1.3em;
     display:inline-block;
 }
 
-.gamingSecretsNav nav a:hover{
+.codingprjPageNav nav a:hover{
     background:#333;
     color: var(--green);
-}
-
-.gamingSecretText {
-    position: relative;
-    padding-left: 2%;
-    padding-right: 2%;
-    font-weight: 300;
-    font-size: large;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: left;
 }
