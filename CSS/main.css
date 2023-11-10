@@ -8,7 +8,9 @@
     --ice: #4cf5ff;
     --orange: #ff7602;
     --gray: #716060;
-    --silver: #c0c0c0
+    --silver: #c0c0c0;
+    --darkgrey: #121212;
+    --lace: #FBF4E2;
 
     --bg: var(--white);
     --fontColor: var(--black);
@@ -63,7 +65,7 @@ header {
 }
 
 .site nav{
-  position:absolute;
+  position:relative;
   top:0;
   left:0;
   background: var(--blue);
@@ -108,18 +110,13 @@ body {
   text-align: left;
 }
 
-.tab {
-  display: inline-block;
-  margin-left: 40px;
-}
-
 .dark-theme {
-    --bg: var(--black);
+    --bg: var(--darkgrey);
     --fontColor: var(--white);
 }
 
 .light-theme {
-    --bg: var(--white);
+    --bg: var(--lace);
     --fontColor: var(--black);
 }
 

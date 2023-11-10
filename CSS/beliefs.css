@@ -8,9 +8,7 @@
     --ice: #4cf5ff;
     --orange: #ff7602;
     --gray: #716060;
-    --silver: #c0c0c0
-
-    --bg: var(--white);
+    --silver: #c0c0c0 --bg: var(--white);
     --fontColor: var(--black);
 }
 
@@ -29,7 +27,7 @@
     padding-bottom: 2%;
     text-align: center;
     font-size: .8em;
-    position:relative;
+    position: relative;
 }
 
 .beliefsPageNav a {
@@ -41,22 +39,22 @@
 .beliefsPageNav a:hover {
     color: var(--blue);
 }
-  
-.beliefsPageNav nav{
-    position:absolute;
-    top:0;
-    left:0;
+
+.beliefsPageNav nav {
+    position: relative;
+    top: 0;
+    left: 0;
     background: var(--blue);
-    width:100%;
+    width: 100%;
 }
 
-.beliefsPageNav nav a{
-    padding:10px 30px;
-    font-size:1.3em;
-    display:inline-block;
+.beliefsPageNav nav a {
+    padding: 10px 30px;
+    font-size: 1.3em;
+    display: inline-block;
 }
 
-.beliefsPageNav nav a:hover{
-    background:#333;
+.beliefsPageNav nav a:hover {
+    background: #333;
     color: var(--green);
 }

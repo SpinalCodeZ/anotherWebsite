@@ -8,9 +8,7 @@
     --ice: #4cf5ff;
     --orange: #ff7602;
     --gray: #716060;
-    --silver: #c0c0c0
-
-    --bg: var(--white);
+    --silver: #c0c0c0 --bg: var(--white);
     --fontColor: var(--black);
 }
 
@@ -29,7 +27,7 @@
     padding-bottom: 2%;
     text-align: center;
     font-size: .8em;
-    position:relative;
+    position: relative;
 }
 
 .randStuffPageNav a {
@@ -41,22 +39,71 @@
 .randStuffPageNav a:hover {
     color: var(--blue);
 }
-  
-.randStuffPageNav nav{
-    position:absolute;
-    top:0;
-    left:0;
+
+.randStuffPageNav nav {
+    position: relative;
+    top: 0;
+    left: 0;
     background: var(--blue);
-    width:100%;
+    width: 100%;
 }
 
-.randStuffPageNav nav a{
-    padding:10px 30px;
-    font-size:1.3em;
-    display:inline-block;
+.randStuffPageNav nav a {
+    padding: 10px 30px;
+    font-size: 1.3em;
+    display: inline-block;
 }
 
-.randStuffPageNav nav a:hover{
-    background:#333;
+.randStuffPageNav nav a:hover {
+    background: #333;
     color: var(--green);
+}
+
+.minecraftLoreBox {
+    position: relative;
+    left: 50%;
+    right: 10%;
+    top: 5%;
+    bottom: 120px;
+    width: 35%;
+    border-style: solid;
+    border-color: var(--black);
+    background-image: url(../IMGS/minecraft\ ocean\ night\ bg.jpg);
+    background-size: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-width: 5px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.minecraftLoreHeading {
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 300;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white);
+    text-align: center;
+}
+
+.minecraftLoreText {
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 600;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--white);
+    text-align: left;
+}
+
+.bodyBackground {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../IMGS/hobbylobby.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
