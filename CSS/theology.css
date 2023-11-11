@@ -16,7 +16,7 @@
     position: relative;
     font-weight: 600;
     font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto';
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -67,7 +67,7 @@
     width: 35%;
     border-style: solid;
     border-color: var(--green);
-    background-image: url(../IMGS/8bit\ jungle.jpg);
+    background-image: url(../IMGS/Theo\ BG.png);
     background-size: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@
     padding-right: 2%;
     font-weight: 600;
     font-size: large;
-    font-family: 'Courier New', Courier, monospace;
-    color: var(--blue);
+    font-family: 'Roboto';
+    color: var(--black);
     text-align: center;
 }
