@@ -8,7 +8,11 @@
     --ice: #4cf5ff;
     --orange: #ff7602;
     --gray: #716060;
-    --silver: #c0c0c0 --bg: var(--white);
+    --silver: #c0c0c0;
+    --darkgrey: #121212;
+    --lace: #FBF4E2;
+
+    --bg: var(--white);
     --fontColor: var(--black);
 }
 
@@ -57,4 +61,43 @@
 .beliefsPageNav nav a:hover {
     background: #333;
     color: var(--green);
+}
+
+.beliefTextBox {
+    position: relative;
+    left: 25%;
+    right: 0;
+    top: 5%;
+    width: 50%;
+    border-style: solid;
+    border-color: var(--green);
+    background-image: url(../IMGS/Theo\ BG.png);
+    background-size: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-width: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.beliefHeaderText {
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 600;
+    font-size: medium;
+    font-family: 'Roboto';
+    color: var(--black);
+    text-align: center;
+}
+
+.beliefText {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 300;
+    font-size: large;
+    font-family: 'Roboto';
+    color: var(--black);
+    text-align: left;
 }

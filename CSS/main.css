@@ -16,6 +16,15 @@
   --fontColor: var(--black);
 }
 
+.homeBackground {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../IMGS/hyperspace.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header {
   position: relative;
   overflow: hidden;

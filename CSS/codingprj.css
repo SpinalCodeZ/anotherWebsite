@@ -12,6 +12,15 @@
     --fontColor: var(--black);
 }
 
+.codingBackground {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../IMGS/leaf\ bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .codingprjPG {
     position: relative;
     font-weight: 600;
@@ -57,4 +66,43 @@
 .codingprjPageNav nav a:hover {
     background: #333;
     color: var(--green);
+}
+
+.codingProjTextBox {
+    position: relative;
+    left: 25%;
+    right: 0;
+    top: 5%;
+    width: 50%;
+    border-style: solid;
+    border-color: var(--green);
+    background-image: url(../IMGS/simple\ hexagonal\ bg.webp);
+    
+    
+    background-repeat: repeat;
+    border-width: 10px;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+.codingProjHeader {
+    position: relative;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 600;
+    font-size: medium;
+    font-family: 'Roboto';
+    color: var(--black);
+    text-align: center;
+}
+
+.diceRollerText {
+    position: relative;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: 300;
+    font-size: large;
+    font-family: 'Roboto';
+    color: var(--black);
+    text-align: left;
 }
